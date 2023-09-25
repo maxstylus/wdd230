@@ -80,16 +80,24 @@ ul {
     font-size: 20px;
 }
 
-#lastModified {
+#lastModified, 
+.modified {
     color:rgb(233, 191, 41);
-
 }
 
 .card {
     border: 1px solid #CCCCCC;
     border-radius: 8px;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 20px;    
+}
+
+.card.information {
+    text-align: center;
+}
+
+.card p {
+    color: black;
 }
 
 footer {
@@ -99,4 +107,6 @@ footer {
     width: 100%;
     margin-top: 20px;
 }
+
+
 
