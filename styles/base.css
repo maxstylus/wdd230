@@ -75,9 +75,12 @@ a {
 }
 
 ul {
-    list-style: none;
     font-family: verdana;
     font-size: 20px;
+}
+
+li {
+    list-style: none;
 }
 
 #lastModified, 
