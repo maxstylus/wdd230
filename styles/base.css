@@ -28,6 +28,10 @@ p {
     font-family: verdana;
 }
 
+li p {
+    color: black;
+}
+
 main h2 {
     font-family: verdana;
     padding-top: 40px;
@@ -72,6 +76,10 @@ a {
     font-family: verdana;
     font-size: 20px;
     color:white;
+}
+
+li a {
+    color: black;
 }
 
 ul {
