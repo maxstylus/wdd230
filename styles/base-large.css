@@ -21,7 +21,7 @@
 
     .sectioncontainer {
         display: flex;
-        flex-direction: row wrap;
+        flex-direction: row;
         justify-content: space-around;
     }
 
