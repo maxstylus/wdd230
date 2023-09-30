@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+h1, 
+h2, 
+h3 {
+margin: 0;
+padding: 15px;
+text-align: center;
+}
+
+
+h1, 
+h3, 
+p {
+    color:white;
+}
+
+li p {
+    color: black;
+}
+
+main h2 {
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+header, footer, h3 {
+    background-color: rgb(40, 38, 72);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+    width: 33%;
+}
+
+.card > .header {
+    background-color: rgb(40, 38, 72);
+    color: white;
+    padding: 15px;
+    min-height: 70px;
+}
+
+.card  > .content {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card  > .content > img {
+ width: 100%;
+ max-width: 500px;
+ text-align: center;
+}
+
+
+.card p {
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .card {
+        width: 48%;
+    }
+
+    main {
+        flex-wrap: wrap;
+        margin: 20px auto;
+    }
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ---- Responsive Design ----*/
+
+@media screen and (max-width: 556px) {
+
+    .card {
+        width: 80%;
+    }
+
+    main {
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+}
+
+
