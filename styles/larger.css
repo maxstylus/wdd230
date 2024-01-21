@@ -1,0 +1,50 @@
+@media screen and (min-width: 500px) {
+    header, footer, h3, .top {
+        background-color: rgb(40, 38, 72);
+        color: white;
+    }
+
+    nav {
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+        align-items: center; 
+        justify-content: space-evenly;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectioncontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        flex-grow: 2;
+        margin-right: 5px;
+    }
+
+    .card.information {
+        flex-grow: 1;
+    }
+
+    .hr-light {
+        background-color:  #CCCCCC;
+        height: 1px;
+        width: 100%;
+        border-style: none;
+      } 
+
+
+
+
+
+
+}

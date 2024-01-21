@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+h1, 
+h2, 
+h3,
+span {
+margin: 0;
+padding: 15px;
+text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h3,
+span, 
+p {
+    color:white;
+    font-family: verdana;
+}
+
+li p {
+    color: black;
+}
+
+main h2 {
+    font-family: verdana;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+header, footer, h3, .top {
+    background-color: rgb(28, 64, 50);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+img {
+    padding: 20px;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .active {
+    background-color: rgba(229, 129, 7, 0.3);
+}
+
+p, span{
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+a {
+    font-family: verdana;
+    font-size: 20px;
+    color:white;
+}
+
+li a {
+    color: black;
+}
+
+ul {
+    font-family: verdana;
+    font-size: 20px;
+    list-style: none;
+}
+
+#lastModified, 
+.modified {
+    color:rgb(233, 191, 41);
+}
+
+.card {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card .information {
+    text-align: center;
+}
+
+.card p {
+    color: black;
+}
+
+.top {
+    padding-bottom: 20px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
