@@ -2,6 +2,19 @@
     header, footer, h3, .top {
         background-color: rgb(40, 38, 72);
         color: white;
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr; 
+        }
+        
+        .card.learning {
+            grid-column: 1/2;
+        }
+        
+        .card.information {
+            grid-column: 2/3;
+        }
     }
 
     nav {
@@ -18,21 +31,6 @@
     main {
         display: flex;
         flex-direction: column;
-    }
-
-    .sectioncontainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .card {
-        flex-grow: 2;
-        margin-right: 5px;
-    }
-
-    .card.information {
-        flex-grow: 1;
     }
 
     .hr-light {
