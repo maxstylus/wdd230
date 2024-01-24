@@ -201,10 +201,16 @@ nav a:hover {
 
 /* Lauren style overrides */
 
+.image-logo {
+  width: 200px;
+}
+
 .max-image-mobile {
+  width: 100%;
   max-width: 300px;
 }
 
 .max-image-desktop {
+  width: 100%;
   max-width: 600px;
 }
