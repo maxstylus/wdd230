@@ -40,7 +40,8 @@ main h2 {
 }
 
 header, footer, h3, .top {
-    background-color: rgb(28, 64, 50);
+    background-color: #496524;
+
 }
 
 header {
@@ -55,17 +56,68 @@ img {
     padding: 20px;
 }
 
-nav {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+#hamburgerButton::before {
+    content: "\2630";
+}
+
+#hamburgerButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
     width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr; 
+    transition: grid-template-rows 0.5s ease-out;
+    background-color: #cf5454;
+
+    /*text-align: center;*/
+}
+
+nav#animateHamburger ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
 }
 
 nav a {
+    /* background-color: #f0940b; */
     padding: 10px;
     text-decoration: none;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: white;
+    text-decoration: none;
+}
+
+ul.menuLinks {
+    list-style-type: none; /* Effect large view */
+}
+
+#hamburgerButton.open::before {
+    content: "x";
+    font-family: verdana;
+}
+
+li.current-menu-item a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+ul {
+    font-family: verdana;
+    font-size: 20px;
+    list-style: none;
 }
 
 nav a:hover {
@@ -84,18 +136,11 @@ p, span{
 a {
     font-family: verdana;
     font-size: 20px;
-    color:white;
+    color:black;
 }
 
-li a {
-    color: black;
-}
 
-ul {
-    font-family: verdana;
-    font-size: 20px;
-    list-style: none;
-}
+
 
 #lastModified, 
 .modified {
