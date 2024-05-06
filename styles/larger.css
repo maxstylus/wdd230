@@ -5,7 +5,7 @@
     }
 
     nav {
-        background-color: black;
+        background-color: rgb(233, 191, 41);
         grid-template-rows: 1fr
         /*
         display: flex;
@@ -15,6 +15,10 @@
         align-items: center; 
         justify-content: space-evenly;
         */
+    }
+
+    #animateHamburger > ul > li > a {
+        color: rgb(40, 38, 72);
     }
 
     #hamburgerButton {

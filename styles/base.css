@@ -22,6 +22,28 @@ main {
     margin: 0 auto;
 }
 
+.background.dark {
+    background-color: black;
+}
+
+body.background.dark main h1 {
+    color: white;
+}
+
+body.background.dark main div section.card.activities ul li {
+    color: white;
+}
+
+body.background.dark main div.container section.card.activities ul li a {
+    color: white;
+}
+
+body.background.dark main div.container section.card.information div.stats p {
+    color: white;
+}
+
+
+
 h3,
 span, 
 p {
@@ -50,6 +72,18 @@ header {
     align-items: center;
     width: 100%;
     padding: 20px;
+    position: relative;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+#darkBtn {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 img {
@@ -138,8 +172,6 @@ a {
     font-size: 20px;
     color:black;
 }
-
-
 
 
 #lastModified, 
