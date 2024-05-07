@@ -42,8 +42,6 @@ body.background.dark main div.container section.card.information div.stats p {
     color: white;
 }
 
-
-
 h3,
 span, 
 p {
@@ -90,6 +88,15 @@ img {
     padding: 20px;
 }
 
+#hamburgerButton.open::before {
+    content: "x";
+    font-family: verdana;
+} 
+
+#animateHamburger.open ul.menuLinks li {
+    display: hidden;
+}
+
 #hamburgerButton::before {
     content: "\2630";
 }
@@ -110,8 +117,7 @@ nav {
     grid-template-rows: 0fr; 
     transition: grid-template-rows 0.5s ease-out;
     background-color: #cf5454;
-
-    /*text-align: center;*/
+    text-align: center;
 }
 
 nav#animateHamburger ul {
@@ -129,7 +135,7 @@ nav a {
 }
 
 ul.menuLinks li a {
-    display: block;
+    /* display: block; */
     padding: .75rem 2vw;
     color: white;
     text-decoration: none;
@@ -139,10 +145,7 @@ ul.menuLinks {
     list-style-type: none; /* Effect large view */
 }
 
-#hamburgerButton.open::before {
-    content: "x";
-    font-family: verdana;
-}
+
 
 li.current-menu-item a {
     background-color: rgba(0,0,0,0.2);
