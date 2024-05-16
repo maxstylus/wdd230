@@ -78,12 +78,8 @@ header img {
 }
 
 #darkBtn {
-    /* position: absolute; */
-    /* top:10px;
-    right: 10px; */
     cursor: pointer; 
     border-radius: 50%;
-    text-align: left;
 }
 
 img {
@@ -99,7 +95,7 @@ img {
     display: hidden;
 }
 
-.skinnyNav {
+.baseNav {
     display: flex;
     flex-direction: row;
 }
@@ -129,7 +125,6 @@ nav a {
 }
 
 ul.menuLinks li a {
-    /* display: block; */
     padding: .75rem 2vw;
     color: white;
     text-decoration: none;
