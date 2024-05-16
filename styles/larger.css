@@ -6,15 +6,13 @@
 
     nav {
         background-color: rgb(233, 191, 41);
-        grid-template-rows: 1fr
-        /*
+        /* grid-template-rows: 1fr */
         display: flex;
         flex-direction: row;
         text-align: center;
         width: 100%;
         align-items: center; 
         justify-content: space-evenly;
-        */
     }
 
     #animateHamburger > ul > li > a {
@@ -27,6 +25,7 @@
 
     ul.menuLinks, ul.menuLinks.open {
         display: flex;
+        background-color:rgb(233, 191, 41);
     }
 
     .container {
