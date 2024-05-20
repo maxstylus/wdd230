@@ -34,4 +34,19 @@
         /* background-color:rgb(233, 191, 41); */
     }
 
+    /* Main Section: Events and Weather */
+
+    section.events-and-weather {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    section.company-spotlight {
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        justify-content: space-evenly;
+    }
+
 }
