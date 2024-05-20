@@ -1,0 +1,24 @@
+h1, 
+h2 {
+    padding: 10px;
+    margin: 15px;
+}
+
+img {
+    display: block;
+    border-radius: 15px; /* 5px rounded corners */
+    padding: 10px;
+    margin: 15px;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
