@@ -1,0 +1,37 @@
+@media screen and (min-width: 500px) {
+    
+    nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 75px;
+    background-color: #606C38;
+    }
+
+    nav a {
+        text-align: center;
+        text-decoration: none;
+        color: #FEFAE0;
+        padding: 35px;
+        font-size: 25px;
+    }
+
+    nav ul li a:hover {
+        color: #BC6C25;
+    }
+
+    nav#animateHamburger {
+        display: flex;
+        flex-direction: row;
+    }
+  
+    #hamburgerButton {
+        display: none;
+    }  
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        /* background-color:rgb(233, 191, 41); */
+    }
+
+}

@@ -86,15 +86,6 @@ img {
     padding: 20px;
 }
 
-#hamburgerButton.open::before {
-    content: "x";
-    font-family: verdana;
-} 
-
-#animateHamburger.open ul.menuLinks li {
-    display: hidden;
-}
-
 .baseNav {
     display: flex;
     flex-direction: row;
