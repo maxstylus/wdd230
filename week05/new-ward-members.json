@@ -1,0 +1,23 @@
+{
+    "name" : "Super Hero Squad",
+    "startDate" : 2018,
+    "numfamilyMembers" : 3,
+    "bishopVisit" : true,
+    "members" : [
+      {
+        "name" : "Grug Crood",
+        "gender" : "male",
+        "birth month" : "July 03, 1987"
+      },
+      {
+        "name" : "Ugga Crood",
+        "gender" : "female",
+        "birth month" : "March 15, 1989"
+      },
+      {
+        "name" : "Eep Crood",
+        "gender" : "femal",
+        "birth month" : "November 22, 2007"
+      }
+    ]
+  }
