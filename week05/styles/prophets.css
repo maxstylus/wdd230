@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: darkslateblue;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px grey;
+    margin: 25px;
+    box-shadow: 5px 5px 5px grey;
+    min-width: 0;
+    max-width: fit-content;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+    height: auto;
+    text-align: center;
+    /* 
+    flex-flow: column nowrap;
+    align-items: center;*/
+    background-color: lavender;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    margin: 10px;
+    border: 1px solid #0b144b;
+    border-radius: 8px;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+section p {
+    padding-top: -5px;
+
+}
+img {
+    display: flex;
+    box-shadow: 5px 5px 5px grey;
+    width: 204px;
+    height: 264px;
+}
