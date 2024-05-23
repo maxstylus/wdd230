@@ -22,6 +22,7 @@
 
     <script src="scripts/hamburgerNavigation.js" async></script>
     <script src="scripts/darkMode.js" async></script>
+    <script src="scripts/weather.js" async></script>
 
 </head>
 <body class="background">
@@ -64,7 +65,7 @@
                         <a href="week03/images/landscape.webp">WebP</a>
                         | <a href="week03/lazyload.html">Lazy Load</a>                     
                         | <a href="week03/responsive-images.html">srcset</a>
-                        | <a href="week03/bom.html">BOM Local Storage</a>
+                        | <a href="week03/bom.html">Storage</a>
                     </li>
                      <li>Week 04:</li>
                      <li>Week 05:
@@ -81,8 +82,13 @@
                     <h2>Information</h2>
                 </div>
                 <div class="stats">
-                    <p>Arizona, USA</p>
-                    <p class="weather">100 degrees</p>
+                    <p>Phoenix, Arizona</p>
+                    <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p class="weather"></p>
                     <p class="pageVisits">Page visits: <span id="visitNum"></span></p>
                 </div>           
             </section>

@@ -42,6 +42,10 @@ body.background.dark main div.container section.card.information div.stats p {
     color: white;
 }
 
+header span {
+    font-size: 40px;
+}
+
 h3,
 span, 
 p {
@@ -173,12 +177,50 @@ a {
     margin-right: 15px;
 }
 
+.activities ul li, 
+.activities ul li a {
+    font-size: 16px;
+}
+
 .card .stats {
     text-align: center;
 }
 
-.card p {
-    color: black;
+.stats p, 
+.stats p span#current-temp {
+    font-family: verdana;
+    font-size: 16px;
+    color:black;
+    margin: 0;
+    border: 0;
+    padding-top: 10px;
+}
+
+figure {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+figure img#weather-icon {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 75px;
+
+}
+
+figcaption {
+    font-family: verdana;
+    font-size: 16px;
+    color:black; 
+    margin: 0;
+    border: 0;
+    padding: 0;  
+}
+
+p.pagvisits {
+    padding-bottom: 10px;
 }
 
 .top {
