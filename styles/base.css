@@ -22,6 +22,42 @@ main {
     margin: 0 auto;
 }
 
+.temple-pic {
+    position: relative;
+
+    /*
+    display: flex;
+    width: 100%;
+    */
+}
+
+main picture img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+
+    /*
+    max-height: 100%;
+    max-width: 100%;
+    */
+}
+
+.herolabel {
+	position: absolute;
+	top: 10%;
+	left: 3%;
+	background: gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: .2rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+    font-size: 16px;
+}
+
 .background.dark {
     background-color: black;
 }
@@ -41,6 +77,8 @@ body.background.dark main div.container section.card.activities ul li a {
 body.background.dark main div.container section.card.information div.stats p {
     color: white;
 }
+
+#current-temp 
 
 header span {
     font-size: 40px;
@@ -119,8 +157,15 @@ nav a {
     display: block;
 }
 
+ul {
+    font-family: verdana;
+    font-size: 20px;
+    list-style: none;
+}
+
+
 ul.menuLinks li a {
-    padding: .75rem 2vw;
+    /*padding: .75rem 2vw;*/
     color: white;
     text-decoration: none;
 }
@@ -132,17 +177,17 @@ ul.menuLinks {
 
 ul.open {
     display:block;
+    margin: 0;
+}
+
+ul.open li a {
+    text-align: center;
 }
 
 li.current-menu-item a {
     background-color: rgba(0,0,0,0.2);
 }
 
-ul {
-    font-family: verdana;
-    font-size: 20px;
-    list-style: none;
-}
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -219,13 +264,27 @@ figcaption {
     padding: 0;  
 }
 
-p.pagvisits {
-    padding-bottom: 10px;
+p.pageVisits {
+    padding-bottom: 20px;
+}
+
+span#visitNum {
+    font-family: verdana;
+    font-size: 16px;
+    color:black; 
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 .top {
     padding-bottom: 20px;
     color: white;
+}
+
+.map {
+    border-radius: 5px;
+    border: 5px;
 }
 
 footer {

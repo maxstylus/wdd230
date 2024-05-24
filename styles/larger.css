@@ -28,6 +28,10 @@
         background-color:rgb(233, 191, 41);
     }
 
+    .herolabel {
+        padding: .5rem;
+    }
+
     .container {
         display: grid;
         grid-template-columns: 2fr 1fr; 

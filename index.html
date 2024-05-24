@@ -23,11 +23,13 @@
     <script src="scripts/hamburgerNavigation.js" async></script>
     <script src="scripts/darkMode.js" async></script>
     <script src="scripts/weather.js" async></script>
+    <script src="scripts/visitCount.js" async></script>
+
 
 </head>
 <body class="background">
     <header>
-        <img src="images/lauren_evolve_profile.jpg" alt="Lauren profile picture" width="150">
+        <img src="images/lauren_evolve_profile.webp" alt="Lauren profile picture" width="150">
         <span>Lauren Snyder</span>
     </header>
     <nav id="animateHamburger">
@@ -43,6 +45,15 @@
         </ul>        
     </nav>
     <main>
+        <div class="temple-pic">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/montreal-quebec-temple-medium.webp">
+                <img src="images/montreal-quebec-temple-large.webp" alt="Montreal Quebec Temple" width="700">
+            </picture>
+            <div class="herolabel">
+                <p>Montreal Quebec Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <hr>
         <div class="container">
@@ -65,7 +76,7 @@
                         <a href="week03/images/landscape.webp">WebP</a>
                         | <a href="week03/lazyload.html">Lazy Load</a>                     
                         | <a href="week03/responsive-images.html">srcset</a>
-                        | <a href="week03/bom.html">Storage</a>
+                        | <a href="week03/bom.html">localStorage</a>
                     </li>
                      <li>Week 04:</li>
                      <li>Week 05:
@@ -93,6 +104,7 @@
                 </div>           
             </section>
         </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.352967922483!2d-73.49315632423446!3d45.56334012681923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91ceaae9b4759%3A0xf70f794a7ef2e836!2sMontreal%20Quebec%20Temple!5e0!3m2!1sen!2sus!4v1716519143453!5m2!1sen!2sus" width=100% height=auto style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </main>
     <footer>
