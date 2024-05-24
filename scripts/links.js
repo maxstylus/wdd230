@@ -6,7 +6,7 @@ async function getLinks() {
     const data = await response.json();
     console.log(data); // Testing only
 
-    displayLinks(data);
+    //displayLinks(data);
   }
   
   getLinks();
