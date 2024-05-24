@@ -60,24 +60,24 @@
             "links" : [
                 {
                     "url":"week04/update-me",
-                    "title":"Pseudo-Classes"
+                    "title":"Pseudo"
                 },
                 {
                     "url":"week04/images/screenshot_css_combinators.jpg",
-                    "title":"CSS Combinators"
+                    "title":"Combinators"
                 },
                 {
                     "url":"week04/tablebuild.html",
-                    "title":"HTML Tables"
+                    "title":"Tables"
                 },
                 {
                     "url":"week04/update-me",
-                    "title":"HTML Forms"
+                    "title":"Forms"
                 }
             ]
         },
         {
-            "week" : "Week 4",
+            "week" : "Week 5",
             "links" : [
                 {
                     "url":"https://codepen.io/maxstylus/pen/yLWOqPL",
