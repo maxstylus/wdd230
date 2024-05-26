@@ -3,9 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lauren Snyder - WDD 230 - Chamber of Commerce - St. Albans, Vermont</title>
+    <meta name="description" content="WDD 230 - Chamber of Commerce project">
+    <meta name="author" content="Lauren Snyder">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16"  href="images/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="Lauren Snyder WDD230 Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Lauren's course work for WDD230">
+    <meta property="og:image" content="https://webuyhouse.com/wp-content/uploads/Queen-Creek-Arizona.jpg">
+    <meta property="og:url" content="https://maxstylus.github.io/wdd230/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/hamburgerNavigation.js" async></script>
+    <script src="scripts/joinChamber.js" async></script>
+
 </head>
 <body>
-    Hello! This is the Discover Page!
+    <header>
+    <nav id="animateHamburger">
+        <div class="baseNav">
+            <img class="logo" src="images/chamber-logo.png" alt="Chamber of Commerce Maple Logo" width="150">
+            <button id="hamburgerButton"></button>  
+        </div>
+        <ul class="menuLinks">
+            <li><a class="nav" href="index.html">Home</a></li>
+            <li><a class="nav" href="discover.html">Discover</a></li>
+            <li><a class="nav" href="directory.html">Directory</a></li>
+            <li><a class="nav" href="join.html">Join</a></li>
+        </ul> 
+    </nav>
+    </header>
+    <main class="discover-page-container">    
+        <!-- Section: Sidebar -->
+        <section class="sidebar">
+
+            <div class="sidebar-container">
+                <div class="sidebar-header-item">
+                    <h2>Information</h2>
+                    <hr>
+                </div>                    
+                <div class="sidebar-content-item">
+                    <img class="sidebar-content-img" src="images/st_albans_map.jpg" alt="Chamber of Commerce Maple Logo" width="150">
+                    <p> 2 N Main St Ste 101, Saint Albans, VT, United States, Vermont</p>
+                    <p>(802)524-2444</p>
+                    <p>info@fcrccvt.com</p>
+                    <a href="http://fcrccvt.com">fcrccvt</a>
+                    <p>Rating - 4.9</p>
+                </div>
+            </div>
+            <div class="sidebar-container">
+                <div class="sidebar-header-item">
+                    <h2>Young Professional's Meetup</h2>
+                    <hr>
+                </div>                    
+                <div class="sidebar-content-item">
+                    <img class="sidebar-content-img" src="images/discover/young_professionals.jpg" alt="Young Professionals Advert" width="150">
+                    <p> We're in the path of totality</p>
+                    <p> All of our businesses are preparing to host all our visitors.</p>
+                </div>
+            </div>
+            <div class="sidebar-container">
+                <div class="sidebar-header-item">
+                    <h2>We're on Main Street</h2>
+                    <hr>
+                </div>                    
+                <div class="sidebar-content-item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13464.365356756556!2d-73.08767559360861!3d44.81068190014571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s2%20N%20Main%20St%20Ste%20101%2C%20Saint%20Albans%2C%20VT%2C%20United%20States%2C%20Vermont!5e0!3m2!1sen!2sus!4v1716697180670!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section: Content Highlights-->
+
+        <section class="discover-content">
+
+            <div class="discover-content-container">
+                <div class="discover-content-header-item">
+                    <h2>We've been busy</h2>
+                </div>                    
+                <div class="discover-content-item">
+                    <img class="discover-content-img" src="images/discover/main_street.jpg" alt="St. Albans Main Street" loading="lazy" width="150">
+                    <img class="discover-content-img" src="images/discover/vermont_maple_festival.jpg" alt="St. Albans Main Street" loading="lazy" width="150">
+                    <img class="discover-content-img" src="images/discover/eclipse_totality.jpg" alt="St. Albans Main Street" loading="lazy" width="150">
+                    <img class="discover-content-img" src="images/discover/franklin_community_voices.jpg" alt="St. Albans Main Street" loading="lazy" width="150">
+                    <img class="discover-content-img" src="images/discover/iron_and_ales.jpg" alt="St. Albans Main Street" loading="lazy" width="150">
+                    <img class="discover-content-img" src="images/discover/may_fiesta_mixer.jpg" alt="St. Albans Main Street" loading="lazy" width="150">
+                </div>
+            </div>    
+        </section>
+    </main>        
+    <footer>
+        <div id="chamber-of-commerce">
+        <p id="chamber-info"> Chamber of Commerce ©<span id="year"></span> - Lauren Snyder - WDD230</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="index.html">Contact Us</a></p>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/social_media/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/social_media/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/social_media/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+        <p class="modified">Last Modified: <span id="lastModified"></span></p>
+        
+        <script src="scripts/getDates.js"></script>
+    </footer> 
+    </div>
+    
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+           
 </body>
 </html>

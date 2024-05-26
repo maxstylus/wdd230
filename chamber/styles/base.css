@@ -257,6 +257,19 @@ input, textarea {
     border: 1px solid #999;
 }
 
+/* Discover Page */
+
+.discover-page-container {
+    display:grid;
+    grid-template: 1fr 50px / 20% 80%; 
+    grid-gap: 15px;
+
+}
+
+section.sidebar-container {
+    grid-column-start: 1/3;
+}
+
 
 /* Footer */
 
