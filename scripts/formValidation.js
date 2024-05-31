@@ -1,21 +1,22 @@
-const w1 = document.querySelector("#w1");
-const w2 = document.querySelector("#w2");
-const fb = document.querySelector("#feedback");
+const kp1 = document.querySelector("#password");
+const kp2 = document.querySelector("#confirm-password");
+const message = document.querySelector("#formmessage");
 
-w2.addEventListener('focusout', controlar);
+kp2.addEventListener("focusout", checkSame);
 
-function controlar() {
-    console.log('inside the function')
-    if (w1.value !== w2.value) {
-        //console.log('no match')
-        w1.value=""
-        w2.value=""
-        w1.focus()
-        fb.textContent = "Values do not match. Try again"
-
-    } else {
-        //console.log('YEA the match')
-        fb.textContent=""
-    }
+// This should be refactored.
+function checkSame() {
+	if (kp1.value !== kp2.value) {
+		message.textContent = "❗Passwords DO NOT MATCH!";
+		message.style.visibility = "show";
+		kp2.style.backgroundColor = "#fff0f3";
+        kp1.value = "";
+		kp2.value = "";
+		kp1.focus();
+	} else {
+		message.style.display = "none";
+		kp2.style.backgroundColor = "#fff";
+		kp2.style.color = "#000";
+	}
 }
 
