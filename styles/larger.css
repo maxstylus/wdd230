@@ -50,7 +50,10 @@
         height: 1px;
         width: 100%;
         border-style: none;
-      } 
+    } 
 
+    .form-container {
+        width: 50%;
+    }
 
 }

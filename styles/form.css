@@ -1,40 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+
+:root {
+    font-family: verdana;
+
+}
+
+.form-container {
+    width: 100%;
+}
+
+h1 {
+    text-align: left;
+    padding: 20px;
+}
+
 label {
+    font-size: 20px;
     display: block;
-    padding: 5px;
+    padding: 10px;
+    margin:10px;
 }
 
 #feedback {
     color: red;
 }
 
-/* --- Range ---*/
-
-input[type=text], 
-input[type=range] {
-    margin: 1rem;
-    padding: 0.5em;
+input#create-account {
+    padding: 10px;
+    border-radius: 6px;
+    margin: 20px;
+    font-size: 20px;
+    width: 90%;
 }
 
-#r {
-	width: 188px;
+input[type=text], 
+input[type=range], 
+input[type=password],
+input[type=email] {
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+/* --- Range ---*/
+
+input#r {
+	width: 96%;
 	margin: 0;
     padding: 0;
+    color: rgb(40, 38, 72);
 }
 
 #rangevalue {
 	font-size: 2rem;
-	color: navy;
+	color: rgb(40, 38, 72);
 }
 
 #rangevalues {
 	display: flex;
-	/* margin: 0 0 0 25px; */
-	width: 200px;
+	width: 100%;
 }
 
 #rangevalues option {
-	flex: 1 1 auto;
-    align-content:space-around;
+    align-content:space-evenly;
+    justify-content: center;
+    width: 100%;
 }
 
 /* --- End Range ---*/
