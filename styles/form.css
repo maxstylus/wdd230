@@ -67,6 +67,7 @@ input#r {
 #rangevalue {
 	font-size: 2rem;
 	color: rgb(40, 38, 72);
+    margin: 0;
 }
 
 #rangevalues {
