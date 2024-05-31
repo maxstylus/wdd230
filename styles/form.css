@@ -82,3 +82,18 @@ input#r {
 }
 
 /* --- End Range ---*/
+
+/* --- record.html --- */
+
+#record-container {
+    display: flex;
+    background-color: rgb(40, 38, 72, .25);
+    border-radius: 6px;
+    margin: 20px;
+}
+#record-msg-pg {
+    font-family: verdana;
+    font-size: 28px;
+    color: rgb(40, 38, 72);
+    padding: 20px;
+}

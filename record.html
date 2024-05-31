@@ -1,1 +1,65 @@
-<p id="record-msg-pg">Account Created Successfully!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauren Snyder - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development Lauren Snyder course assignment portal">
+    <meta name="author" content="Lauren Snyder">
+    <link rel="icon" href="images/favicon-1.ico">
+
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="Lauren Snyder WDD230 Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Lauren's course work for WDD230">
+    <meta property="og:image" content="https://webuyhouse.com/wp-content/uploads/Queen-Creek-Arizona.jpg">
+    <meta property="og:url" content="https://maxstylus.github.io/wdd230/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/hamburgerNavigation.js" async></script>
+    <script src="scripts/darkMode.js" async></script>
+    <script src="scripts/weather.js" async></script>
+    <script src="scripts/visitCount.js" async></script>
+    <script src="scripts/links.js" async></script>
+    <script src="scripts/form.js" async></script>
+    <script src="scripts/formValidation.js" async></script>
+
+</head>
+<body class="background">
+    <header>
+        <img src="images/lauren_evolve_profile.webp" alt="Lauren profile picture" width="150">
+        <span>Lauren Snyder</span>
+    </header>
+    <nav id="animateHamburger">
+        <div class="baseNav">
+            <img src="images/darkmode.png" alt="dark mode icon toggle" title="Toggle Dark Mode" width="75" id="darkBtn">
+            <button id="hamburgerButton"></button> <!--&#9776;-->
+        </div>        
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="chamber/index.html" title="Chamber">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html" title="Chamber Site Plan">Site Plan</a></li>
+            <li class="active"><a href="form.html">Form</a></li>
+        </ul>        
+    </nav>
+    <main>
+        
+        <div id="record-container">
+            <p id="record-msg-pg">Account Created Successfully!</p>
+        </div>       
+
+    </main>
+    <footer>
+        <p>©<span id="year"></span>| Lauren Snyder | USA</p>
+        <p class="modified">Last Modified: <span id="lastModified"></span></p>
+        
+        <script src="scripts/getDates.js"></script>
+    </footer>
+
+</body>
+</html>
