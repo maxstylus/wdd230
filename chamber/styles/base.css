@@ -1,6 +1,20 @@
 
 /* Body */
 
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
 
 h1,
 h2, 
@@ -49,7 +63,6 @@ nav {
 }
 
 nav a {
-    /* background-color: #f0940b; */
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -60,7 +73,6 @@ ul {
     font-size: 20px;
     list-style: none;
 }
-
 
 ul.menuLinks li a {
     padding: .75rem 2vw;
@@ -87,7 +99,6 @@ ul.open {
     justify-content: space-between;
     width: 100%;
 }
-
 
 nav#animateHamburger {
     display: flex;
@@ -259,16 +270,65 @@ input, textarea {
 
 /* Discover Page */
 
-.discover-page-container {
+body main.discover-page-container {
     display:grid;
-    grid-template: 1fr 50px / 20% 80%; 
-    grid-gap: 15px;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: repeat(auto-fit, 1fr); */
+    /* grid-auto-flow: column;    */
+    background-color: FEFAE0;
 
 }
 
-section.sidebar-container {
-    grid-column-start: 1/3;
+section.sidebar {
+    grid-column: 1/3;
 }
+
+.sidebar-content-item p {
+    font-size: 16px;
+    font-family: Verdana;
+}
+
+.sidebar-container {
+    background-color: rgb(96,108,56,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    padding: 20px;
+    margin: 20px;
+}
+
+.sidebar-content-item iframe,
+.sidebar-content-item img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+section.discover-content {
+    grid-column: 3/5;
+}
+
+.discover-content-container {
+    background-color: rgb(96,108,56,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    padding: 20px;
+    margin: 20px;
+}
+
+.discover-content-item img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.discover-content-img:hover {
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    opacity: 0.75;
+}
+
 
 
 /* Footer */
