@@ -44,63 +44,63 @@
     </nav>
     </header>
     <main class="join-page-container">
-        <h1>Join Your Chamber of Commerce Today!</h1>
         <!-- Section: Sidebar -->
-        <section class="sidebar">
-            <!-- Not for Profit Membership -->
-            <div class="sidebar-container">                
-                <div class="sidebar-header-item">
-                    <i class="fa-regular fa-star"></i>
-                    <h2>Free Membership</h2>
-                    <hr>
-                </div>                    
-                <div class="sidebar-content-item">
-                    <p> Designed for Non-Profits</p>
-                    <p> Non-profits help our community</p>
-                    <p> Equal to the Gold Membership</p>                    
+        <section class="join-sidebar">
+                <!-- Not for Profit Membership -->
+                <div class="sidebar-container">                
+                    <div class="sidebar-header-item">
+                        <i class="fa-regular fa-star"></i>
+                        <h2>Free Membership</h2>
+                        <hr>
+                    </div>                    
+                    <div class="sidebar-content-item">
+                        <p> Designed for Non-Profits</p>
+                        <p> Non-profits help our community</p>
+                        <p> Equal to the Gold Membership</p>                    
+                    </div>
                 </div>
-            </div>
-            <!-- Bronze Membership -->
-            <div class="sidebar-container">
-                <div class="sidebar-header-item">
-                    <h2>Bronze Membership</h2>
-                    <hr>
-                </div>                    
-                <div class="sidebar-content-item">
-                    <p>$50 - Annual</p>
-                    <p>On the mailing list</p>
-                    <p>Yearly networking party</p>
+                <!-- Bronze Membership -->
+                <div class="sidebar-container">
+                    <div class="sidebar-header-item">
+                        <h2>Bronze Membership</h2>
+                        <hr>
+                    </div>                    
+                    <div class="sidebar-content-item">
+                        <p> $50 - Annual</p>
+                        <p> On the mailing list</p>
+                        <p> Yearly networking party</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Silver Membership -->
-            <div class="sidebar-container">
-                <div class="sidebar-header-item">
-                    <h2>Silver Membership</h2>
-                    <hr>
-                </div>                    
-                <div class="sidebar-content-item">
-                    <p>$200 - Annual</p>
-                    <p>Early Bird access to promotionals</p>
-                    <p>Yearly networking party</p>
-                    <p>Business mentioned in Directory</p>
+                <!-- Silver Membership -->
+                <div class="sidebar-container">
+                    <div class="sidebar-header-item">
+                        <h2>Silver Membership</h2>
+                        <hr>
+                    </div>                    
+                    <div class="sidebar-content-item">
+                        <p> $200 - Annual</p>
+                        <p> Early Bird access to promotionals</p>
+                        <p> Yearly networking party</p>
+                        <p> Business mentioned in Directory</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Gold Membership -->
-            <div class="sidebar-container">
-                <div class="sidebar-header-item">
-                    <h2>Gold Membership</h2>
-                    <hr>
-                </div>                    
-                <div class="sidebar-content-item">
-                    <p>$500 - Annual</p>
-                    <p>Early Bird access to promotionals</p>
-                    <p>Yearly networking party</p>
-                    <p>Business mentioned in Directory</p>
-                    <p>2 free promotional ads a year</p>
+                <!-- Gold Membership -->
+                <div class="sidebar-container">
+                    <div class="sidebar-header-item">
+                        <h2>Gold Membership</h2>
+                        <hr>
+                    </div>                    
+                    <div class="sidebar-content-item">
+                        <p> $500 - Annual</p>
+                        <p> Early Bird access to promotionals</p>
+                        <p> Yearly networking party</p>
+                        <p> Business mentioned in Directory</p>
+                        <p> 2 free promotional ads a year</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <section class="form-container">            
+        </section>
+        <section class="join-form-container">            
+           <h1>Join the Chamber Today!</h1>
             <form method="get" action="thankyou.html">
                 <div id="formmessage"></div>
                 <label>First Name 
@@ -123,12 +123,13 @@
                 </label>
                 <label>Membership Level
                     <select name="membership-level">
-                        <option>Please Select &#9662;</option>
+                        <option>Please Select </option> <!-- Down arrow icon, if needed: &#9662;-->
                         <option value="nonprofit">Not for Profit - Free!</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
                         <option value="gold">Gold Membership</option>
                     </select>
+                </label>
                 <label>Business/Organization description
                     <textarea id="description" name="description" rows="4" cols="50"></textarea>
                 </label>

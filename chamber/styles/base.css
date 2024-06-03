@@ -292,17 +292,33 @@ section.discover-content {
 
 main.join-page-container {
     display: flex; 
+    flex-direction: column;
     background-color: #FEFAE0;
 
 }
 
-.form-container {
+section.join-sidebar {
+    /* width: 200px; */
     width: 100%;
 }
 
-h1 {
+.sidebar-container {
+    font-family: verdana;
+}
+
+.sidebar-container p:before {
+    content: ' \2043';
+}
+
+section.join-form-container {
+    /* flex: 1 0 auto; */
+    width: 100%;
+}
+
+.join-form-container h1 {
     text-align: left;
-    padding: 20px;
+    padding-left: 20px;
+    color: #283618;
 }
 
 #formmessage {
@@ -314,7 +330,8 @@ h1 {
 
 }
 
-label {
+form label {
+    font-family: verdana;
     font-size: 20px;
     display: block;
     padding: 10px;
@@ -330,13 +347,17 @@ input#join-chamber {
     border-radius: 6px;
     margin: 20px;
     font-size: 20px;
+    font-family: verdana;
     width: 90%;
 }
 
 input[type=text], 
 input[type=range], 
 input[type=password],
-input[type=email] {
+input[type=email],
+input[type=tel],
+select,
+textarea {
     display: block;
     padding: 10px;
     border-radius: 6px;
@@ -349,6 +370,8 @@ input[type=email] {
 main.thankyou-page-container {
     display: flex; 
     background-color: #FEFAE0;
+    justify-content: center;
+    padding: 40px;
 }
 
 #record-container {

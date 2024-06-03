@@ -49,8 +49,20 @@
         justify-content: space-evenly;
     }
 
-    .form-container {
-        width: 50%;
+    /* --- Join Page --- */
+
+    main.join-page-container {
+        flex-direction: row;
+    }
+
+    section.join-sidebar {
+        /* width: 200px; */
+        width: 40%;
+    }
+    
+    section.join-form-container {
+        /* flex: 1 0 auto; */
+        width: 60%;
     }
 
 }
