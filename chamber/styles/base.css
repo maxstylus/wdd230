@@ -101,9 +101,8 @@ ul.open {
 }
 
 nav#animateHamburger {
-    display: flex;
     flex-direction: column;
-
+    width: 100%;
 }
 
 #hamburgerButton::before {
@@ -230,16 +229,17 @@ section.company-spotlight {
 /* Discover Page */
 
 body main.discover-page-container {
-    display:grid;
-    grid-template-columns: auto auto auto auto;
-    /* grid-template-columns: repeat(auto-fit, 1fr); */
-    /* grid-auto-flow: column;    */
+    display: flex; 
+    flex-direction: column;
     background-color: #FEFAE0;
-
 }
 
 section.sidebar {
-    grid-column: 1/3;
+    width: 100%;
+}
+
+section.discover-content {
+    width: 100%;
 }
 
 .sidebar-content-item p {
@@ -253,7 +253,7 @@ section.sidebar {
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     padding: 20px;
-    margin: 20px;
+    margin: 20px  10px 20px;
 }
 
 .sidebar-content-item iframe,
@@ -263,9 +263,11 @@ section.sidebar {
     padding: 10px;
 }
 
+/*
 section.discover-content {
     grid-column: 3/5;
 }
+*/
 
 .discover-content-container {
     background-color: rgb(96,108,56,0.5);
@@ -273,7 +275,7 @@ section.discover-content {
     transition: 0.3s;
     border-radius: 5px; 
     padding: 20px;
-    margin: 20px;
+    margin: 20px 10px 20px;
 }
 
 .discover-content-item img {
@@ -294,7 +296,6 @@ main.join-page-container {
     display: flex; 
     flex-direction: column;
     background-color: #FEFAE0;
-
 }
 
 section.join-sidebar {
@@ -311,7 +312,6 @@ section.join-sidebar {
 }
 
 section.join-form-container {
-    /* flex: 1 0 auto; */
     width: 100%;
 }
 
@@ -386,9 +386,6 @@ main.thankyou-page-container {
     color: rgb(40, 38, 72);
     padding: 20px;
 }
-
-
-
 
 
 /* Footer */

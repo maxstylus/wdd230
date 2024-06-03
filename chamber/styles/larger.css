@@ -49,6 +49,19 @@
         justify-content: space-evenly;
     }
 
+    /* --- Discover Page --- */
+    body main.discover-page-container {
+        flex-direction: row;
+    }
+
+    section.sidebar {
+        width: 40%;
+    }
+    
+    section.discover-content {
+        width: 60%;
+    }
+
     /* --- Join Page --- */
 
     main.join-page-container {
@@ -56,12 +69,10 @@
     }
 
     section.join-sidebar {
-        /* width: 200px; */
         width: 40%;
     }
     
     section.join-form-container {
-        /* flex: 1 0 auto; */
         width: 60%;
     }
 
