@@ -29,18 +29,19 @@
 
 </head>
 <body>
-    <nav id="animateHamburger">
-        <div class="baseNav">
-            <img class="logo" src="images/chamber-logo.png" alt="Chamber of Commerce Maple Logo" width="150">
-            <button id="hamburgerButton"></button>  
-        </div>
-        <ul class="menuLinks">
-            <li><a class="nav" href="index.html">Home</a></li>
-            <li><a class="nav" href="discover.html">Discover</a></li>
-            <li><a class="nav" href="directory.html">Directory</a></li>
-            <li><a class="nav" href="join.html">Join</a></li>
-        </ul> 
-    </nav>
+    <header>
+        <nav id="animateHamburger">
+            <div class="baseNav">
+                <img class="logo" src="images/chamber-logo.png" alt="Chamber of Commerce Maple Logo" width="150">
+                <button id="hamburgerButton"></button>  
+            </div>
+            <ul class="menuLinks">
+                <li><a class="nav" href="index.html">Home</a></li>
+                <li><a class="nav" href="discover.html">Discover</a></li>
+                <li><a class="nav" href="directory.html">Directory</a></li>
+                <li><a class="nav" href="join.html">Join</a></li>
+            </ul> 
+        </nav>
     </header>
     <main class="join-page-container">
         <!-- Section: Sidebar -->
@@ -131,10 +132,8 @@
                 <label>Business/Organization description
                     <textarea id="description" name="description" rows="4" cols="50"></textarea>
                 </label>
-                <input type="hidden" name="form_timestamp" id="form_timestamp" value="">
-
-
-        
+                
+                <input type="hidden" name="form_timestamp" id="form_timestamp" value="">        
                 <input type="submit" id="join-chamber" value="Join Chamber">
             </form>
         </section>       
@@ -160,7 +159,5 @@
         
         <script src="scripts/getDates.js"></script>
     </footer> 
-    </div>
-
 </body>
 </html>
