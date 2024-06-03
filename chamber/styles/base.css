@@ -330,6 +330,7 @@ article.grid section {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
+    margin: 20px;
 }
 
 .grid section {
