@@ -325,7 +325,7 @@ label {
     color: red;
 }
 
-input#create-account {
+input#join-chamber {
     padding: 10px;
     border-radius: 6px;
     margin: 20px;
@@ -342,38 +342,6 @@ input[type=email] {
     border-radius: 6px;
     width: 100%;
 }
-
-
-/* --- Range ---*/
-
-input#r {
-	width: 96%;
-	margin: 0;
-    padding: 0;
-    color: rgb(40, 38, 72);
-}
-
-#rangevalue {
-	font-size: 2rem;
-	color: rgb(40, 38, 72);
-    margin: 20px;
-    margin-bottom: 0;
-
-}
-
-#rangevalues {
-	display: flex;
-	width: 100%;
-}
-
-#rangevalues option {
-    align-content:space-evenly;
-    justify-content: center;
-    width: 100%;
-}
-
-/* --- End Range ---*/
-
 
 
 /* --- Thankyou.html ---*/

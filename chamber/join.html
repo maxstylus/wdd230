@@ -28,8 +28,6 @@
     <script src="scripts/joinChamber.js" async></script>
     <script src="scripts/form.js" async></script>
     <script src="scripts/formValidation.js" async></script>
-
-
 </head>
 <body>
     <nav id="animateHamburger">
@@ -46,45 +44,99 @@
     </nav>
     </header>
     <main class="join-page-container">
-        <div class="form-container">
-            <h1>Create Account</h1>
+        <h1>Join Your Chamber of Commerce Today!</h1>
+        <!-- Section: Sidebar -->
+        <section class="sidebar">
+            <!-- Not for Profit Membership -->
+            <div class="sidebar-container">                
+                <div class="sidebar-header-item">
+                    <i class="fa-regular fa-star"></i>
+                    <h2>Free Membership</h2>
+                    <hr>
+                </div>                    
+                <div class="sidebar-content-item">
+                    <p> Designed for Non-Profits</p>
+                    <p> Non-profits help our community</p>
+                    <p> Equal to the Gold Membership</p>                    
+                </div>
+            </div>
+            <!-- Bronze Membership -->
+            <div class="sidebar-container">
+                <div class="sidebar-header-item">
+                    <h2>Bronze Membership</h2>
+                    <hr>
+                </div>                    
+                <div class="sidebar-content-item">
+                    <p>$50 - Annual</p>
+                    <p>On the mailing list</p>
+                    <p>Yearly networking party</p>
+                </div>
+            </div>
+            <!-- Silver Membership -->
+            <div class="sidebar-container">
+                <div class="sidebar-header-item">
+                    <h2>Silver Membership</h2>
+                    <hr>
+                </div>                    
+                <div class="sidebar-content-item">
+                    <p>$200 - Annual</p>
+                    <p>Early Bird access to promotionals</p>
+                    <p>Yearly networking party</p>
+                    <p>Business mentioned in Directory</p>
+                </div>
+            </div>
+            <!-- Gold Membership -->
+            <div class="sidebar-container">
+                <div class="sidebar-header-item">
+                    <h2>Gold Membership</h2>
+                    <hr>
+                </div>                    
+                <div class="sidebar-content-item">
+                    <p>$500 - Annual</p>
+                    <p>Early Bird access to promotionals</p>
+                    <p>Yearly networking party</p>
+                    <p>Business mentioned in Directory</p>
+                    <p>2 free promotional ads a year</p>
+                </div>
+            </div>
+        </div>
+        <section class="form-container">            
             <form method="get" action="thankyou.html">
                 <div id="formmessage"></div>
-                <label>Username 
-                    <input type="text" placeholder="username" pattern="[a-zA-Z\s.]{2,}" title="username" id="username" name="username" required>
+                <label>First Name 
+                    <input type="text" placeholder="Enter First Name"  id="firstname" name="firstname" required>
                 </label>
-                <label>Password
-                    <input type="password" placeholder="password" pattern="[a-zA-Z0-9]{8,}" title="password" id="password" name="password" required>
+                <label>Last Name
+                    <input type="text" placeholder="Enter Last Name"  id="lastname" name="lastname" required>
                 </label>
-                <label>Confirm Password
-                    <input type="password" placeholder="confirm password" pattern="[a-zA-Z0-9]{8,}" title="confirm-password" id="confirm-password" name="confirm-password" required>
+                <label>Title or Position
+                    <input type="text" placeholder="Enter Title or Position" pattern="[a-zA-Z\s-]{7,}" id="username" name="username" required>
                 </label>
                 <label>Email
-                    <input type="email" placeholder="student@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" id="email" name="email" required>
+                    <input type="email" placeholder="student@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" id="email" name="email" required>
                 </label>
-                <p id="rangevalue">0</p>
-                <label for="r">Range                     
-                    <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
-                    <datalist id="rangevalues">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </datalist>
+                <label>Mobile Phone
+                    <input type="tel" placeholder="802-123-4567" id="mobile-phone" name="mobile-phone" required>
                 </label>
-        
-                <input type="submit" id="create-account" value="Create Account">
-            </form>
-        </div>    
+                <label>Business/Organization Name
+                    <input type="text" id="orgname" name="orgname" required>
+                </label>
+                <label>Membership Level
+                    <select name="membership-level">
+                        <option>Please Select &#9662;</option>
+                        <option value="nonprofit">Not for Profit - Free!</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                <label>Business/Organization description
+                    <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                </label>
 
-    
+        
+                <input type="submit" id="join-chamber" value="Join Chamber">
+            </form>
+        </section>       
     </main>        
     <footer>
         <div id="chamber-of-commerce">
