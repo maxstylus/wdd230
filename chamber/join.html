@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/hamburgerNavigation.js" async></script>
+    <script src="scripts/formTimestamp.js" async></script>
 
 </head>
 <body>
@@ -98,9 +99,8 @@
                 </div>
         </section>
         <section class="join-form-container">            
-           <h1>Join the Chamber Today!</h1>
+           <h1>Join the Chamber!</h1>
             <form method="get" action="thankyou.html">
-                <div id="formmessage"></div>
                 <label>First Name 
                     <input type="text" placeholder="Enter First Name"  id="firstname" name="firstname" required>
                 </label>
@@ -108,10 +108,10 @@
                     <input type="text" placeholder="Enter Last Name"  id="lastname" name="lastname" required>
                 </label>
                 <label>Title or Position
-                    <input type="text" placeholder="Enter Title or Position" pattern="[a-zA-Z\s-]{7,}" id="username" name="username" required>
+                    <input type="text" id="position" name="position" placeholder="Enter Title or Position" pattern="[a-zA-Z\s\-]{7,}" title="Please enter at least seven characters containing only letters, spaces, and hyphens" required>
                 </label>
                 <label>Email
-                    <input type="email" placeholder="student@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" id="email" name="email" required>
+                    <input type="email" placeholder="student@byui.edu" id="email" name="email" required>
                 </label>
                 <label>Mobile Phone
                     <input type="tel" placeholder="802-123-4567" id="mobile-phone" name="mobile-phone" required>
@@ -131,6 +131,8 @@
                 <label>Business/Organization description
                     <textarea id="description" name="description" rows="4" cols="50"></textarea>
                 </label>
+                <input type="hidden" name="form_timestamp" id="form_timestamp" value="">
+
 
         
                 <input type="submit" id="join-chamber" value="Join Chamber">
