@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/hamburgerNavigation.js" async></script>
-    <script src="scripts/joinChamber.js" async></script>
 
 </head>
 <body>
@@ -103,44 +102,26 @@
     </main>        
     <footer>
         <div id="chamber-of-commerce">
-        <p id="chamber-info"> Chamber of Commerce ©<span id="year"></span> - Lauren Snyder - WDD230</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="index.html">Contact Us</a></p>
+            <p id="chamber-info"> Chamber of Commerce ©<span id="year"></span> - Lauren Snyder - WDD230</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="index.html">Contact Us</a></p>
 
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/social_media/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/social_media/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/social_media/instagram.png" alt="instagram icon">
-            </a>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/social_media/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/social_media/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/social_media/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <p class="modified">Last Modified: <span id="lastModified"></span></p>
+            
+            <script src="scripts/getDates.js"></script>
         </div>
-        <p class="modified">Last Modified: <span id="lastModified"></span></p>
-        
-        <script src="scripts/getDates.js"></script>
-    </footer> 
-    </div>
-    
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>
+    </footer>
            
 </body>
 </html>
