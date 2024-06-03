@@ -1,60 +1,60 @@
 {
     "members" : [
       {
-        "name" : "Company One",
+        "name" : "Catalyst Coffee",
         "address" : "1452 Main St, St. Albans, VT 05455",
-        "phoneNumber" : "802-259-7784",
-        "websiteURL" : "www.mycompany.com",
-        "imageSrc" : "image.jpg", 
-        "membershipLevel" : "Gold"
+        "phone" : "802-393-4404",
+        "websiteURL" : "https://www.catalystcoffeebar.com",
+        "imageSrc" : "images/directory/catalyst_coffee_bar.webp", 
+        "membership" : "Gold"
       },
       {
-        "name" : "Company Two",
-        "address" : "1158 Main St, St. Albans, VT 05455",
-        "phoneNumber" : "802-958-6528",
-        "websiteURL" : "www.mycompany.com",
-        "imageSrc" : "image.jpg", 
-        "membershipLevel" : "Gold"
+        "name" : "Eatons Fine Jewelry",
+        "address" : "30 Main St, St. Albans, VT 05478",
+        "phone" : "802-524-4055",
+        "websiteURL" : "https://www.eatonsjewelry.com/",
+        "imageSrc" : "images/directory/eatons_fine_jewelry.webp", 
+        "membership" : "Gold"
       },
       {
-        "name" : "Company One",
+        "name" : "Moonshadows",
         "address" : "2598 Main St, St. Albans, VT 05455",
-        "phoneNumber" : "802-485-5896",
-        "websiteURL" : "www.mycompany.com",
-        "imageSrc" : "image.jpg", 
-        "membershipLevel" : "Gold"
+        "phone" : "802-524-6758",
+        "websiteURL" : "https://www.yelp.com/biz/moonshadows-gifts-for-the-spirit-saint-albans",
+        "imageSrc" : "images/directory/moonshadows.webp", 
+        "membership" : "Gold"
       },
       {
-        "name" : "Company One",
+        "name" : "Hampton Inn",
         "address" : "3528 Main St, St. Albans, VT 05455",
-        "phoneNumber" : "802-256-3214",
-        "websiteURL" : "www.mycompany.com",
-        "imageSrc" : "image.jpg", 
-        "membershipLevel" : "Gold"
+        "phone" : "802-256-3214",
+        "websiteURL" : "https://www.hamptoninn.com",
+        "imageSrc" : "images/directory/hampton_inn.webp", 
+        "membership" : "Gold"
       },
       {
-        "name" : "Company One",
+        "name" : "The Old Foundary",
         "address" : "3965 Main St, St. Albans, VT 05455",
-        "phoneNumber" : "802-365-2541",
-        "websiteURL" : "www.mycompany.com",
-        "imageSrc" : "image.jpg", 
-        "membershipLevel" : "Gold"
+        "phone" : "802-524-0330",
+        "websiteURL" : "https://theoldfoundry.com/",
+        "imageSrc" : "images/directory/the_old_foundary.webp", 
+        "membership" : "Gold"
       },
       {
-        "name" : "Company One",
+        "name" : "Ben and Jerry's",
         "address" : "4152 Main St, St. Albans, VT 05455",
-        "phoneNumber" : "802-145-2585",
-        "websiteURL" : "www.mycompany.com",
-        "imageSrc" : "image.jpg", 
-        "membershipLevel" : "Gold"
+        "phone" : "802-145-2585",
+        "websiteURL" : "https://www.dairyfoods.com",
+        "imageSrc" : "image/directory/ben_and_jerrys_st_albans.webp", 
+        "membership" : "Gold"
       },
       {
-        "name" : "Company One",
+        "name" : "Amtrak St. Albans",
         "address" : "6528 Main St, St. Albans, VT 05455",
-        "phoneNumber" : "802-749-3625",
-        "websiteURL" : "www.mycompany.com",
-        "imageSrc" : "image.jpg", 
-        "membershipLevel" : "Gold"
+        "phone" : "802-749-3625",
+        "websiteURL" : "https://www.amtrak.com",
+        "imageSrc" : "images/directory/amtrak_st_albans.webp", 
+        "membership" : "Gold"
       }
     ]
   }
