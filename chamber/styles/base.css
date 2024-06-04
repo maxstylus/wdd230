@@ -537,13 +537,16 @@ footer {
     color: #FEFAE0;
 }
 
-div#chamber-of-commerce .social {
-    justify-content: center;
-}
-
 #chamber-of-commerce {
+    color: red;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#chamber-of-commerce .social {
+    padding: 15px;
 }
 
 footer p {
