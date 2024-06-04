@@ -325,7 +325,7 @@ article.grid section {
     border-radius: 3%;
 }
 
-.grid {
+article.grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
@@ -370,45 +370,45 @@ p.free {
 	font-family: "Caveat", cursive;
 }
 
-.list {
+article.list {
 	display: flex;
 	flex-direction: column;
 }
 
-.list section {
+article.list section {
 	display: grid;
 	grid-template-columns: 2fr 1fr 2fr 2fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
 
-.list section > * {
+article.list section > * {
 	margin: 0 1rem;
 }
 
-.list section img {
+article.list section img {
 	display: none; /* smaller viewports only */
 }
 
-.list section h3 {
+article.list section h3 {
 	font-size: 1rem;
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
-.list section:nth-child(even) {
+article.list section:nth-child(even) {
 	background-color: rgb(96, 108, 56, .5);
 }
 
-.list section h3 {
+article.list section h3 {
 	font-size: 16px;
 }
 
-.list section p {
+article.list section p {
 	font-weight: 600;
 	font-size: smaller;
 }
 
-.list section a {
+article.list section a {
 	font-family: "Verdana", Arial, sans-serif;
 	font-size: 0.85rem;
 	color: #283618;
@@ -419,8 +419,6 @@ img {
 	height: 75px;
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
-
-
 
 
 /* --- JOIN PAGE --- */
@@ -539,13 +537,25 @@ footer {
     color: #FEFAE0;
 }
 
+div#chamber-of-commerce .social {
+    justify-content: center;
+}
+
+#chamber-of-commerce {
+    display: flex;
+    flex-direction: column;
+}
+
 footer p {
     font-size: 1.2em;
+    text-align: center;
 }
 
 footer a {
     text-decoration: none;
     color: #FEFAE0;
+    font-size: 40px;
+    text-align: center;
 }
 
 footer p a:hover {
