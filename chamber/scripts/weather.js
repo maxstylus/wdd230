@@ -7,9 +7,8 @@ let lat = 44.81;
 let lon = -73.08;
 let units = 'imperial';
 
-// const url = `https://api.openweathermap.org/data/2.5/weather?units=${units}&lat=${lat}&lon=${lon}&appid=${api_key}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?units=${units}&lat=${lat}&lon=${lon}&appid=${api_key}`;
 
-const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=${units}&appid=${api_key}`;
 
 async function apiFetch() {
     try {
@@ -30,12 +29,12 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.current.temp}&deg;F`; //${data.main.temp}
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`; 
     console.log(currentTemp.innerHTML);
 
-    const iconsrc = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`; //${data.weather[0].icon}
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; 
 
-    let desc = data.current.weather[0].description;    
+    let desc = data.weather[0].description;    
     console.log(desc); //testing
 
     weatherIcon.setAttribute('src', iconsrc);
