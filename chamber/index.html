@@ -27,6 +27,12 @@
     <script src="scripts/hamburgerNavigation.js" async></script>
     <script src="scripts/joinChamber.js" async></script>
     <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js" async></script>
+    <!-- <script src="scripts/forecast.js" async></script> -->
+
+    <script src="scripts/spotlight.js" async></script>
+
+
     <script src="https://kit.fontawesome.com/1ef362e679.js" crossorigin="anonymous" async></script>
 
 
@@ -99,12 +105,17 @@
                 <hr>
             </div>                    
             <div class="main-content-item">
-                <img class="main-content-img" src="images/weather/weather.png" alt="Chamber of Commerce Maple Logo" width="150">
-                <p> 67 degrees Fahrenheit <br>
-                    Partly Cloudy <br>
-                    Humidity: 35% <br>
-                    Wind Chill: n/a
-                </p>
+                <div class="stats">
+                    <p>St. Albans, Vermont</p>
+                    <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p class="weather"></p>
+                    <p><span id="forecast"></span></p>
+                    <!-- <p class="pageVisits">Page visits: <span id="visitNum"></span></p> -->
+                </div> 
                 
             </div>
         </div>
@@ -113,37 +124,10 @@
     <!-- Section 3: Company Spotlights -->
     <section>
         <section class="company-spotlight">
-            <div class="spotlight-container">
-                <div class="spotlight-header-item">
-                    <h2>Company Spotlight</h2>
-                </div>                    
-                <div class="spotlight-content-item">
-                    <p> 
-                        This is where Company #1 will go.                    
-                    </p>
-                </div>
-            </div>
-            <div class="spotlight-container">
-                <div class="spotlight-header-item">
-                    <h2>Company Spotlight</h2>
-                </div>                    
-                <div class="spotlight-content-item">
-                    <p> 
-                        This is where Company #2 will go.                    
-                    </p>
-                </div>
-            </div>
-            <div class="spotlight-container">
-                <div class="spotlight-header-item">
-                    <h2>Company Spotlight</h2>
-                </div>                    
-                <div class="spotlight-content-item">
-                    <p> 
-                        This is where Company #3 will go.                    
-                    </p>
-                </div>
-            </div>
-        </section>
+        <div id="spotlight-one" class="spotlight-container"></div>
+        <div id="spotlight-two" class="spotlight-container"></div>
+        <div id="spotlight-three" class="spotlight-container"></div>
+            
     </section>
     </main>        
     <footer>
