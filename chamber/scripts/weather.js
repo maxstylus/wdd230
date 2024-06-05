@@ -80,6 +80,7 @@ function displayResults2(data2) {
     console.log(data2.list[15].main.temp)
     console.log(data2.list[23].main.temp)  
 
+    // Every day multiplied by 8 segments because data is returned in 3hr increments. 
     forecast1.innerHTML = `${data2.list[7].main.temp}&deg;F`; 
     forecast2.innerHTML = `${data2.list[15].main.temp}&deg;F`; 
     forecast3.innerHTML = `${data2.list[23].main.temp}&deg;F`; 
