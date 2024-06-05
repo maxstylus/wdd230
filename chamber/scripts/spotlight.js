@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
             img.alt = member.name;
 
             // Create name element
-            const name = document.createElement('p');
+            const name = document.createElement('h2');
             name.textContent = member.name;
 
             // Show Membership Level
             const membership = document.createElement('p');
-            membership.textContent = member.membership;
+            membership.textContent = `Membership: ${member.membership}`;
 
             // Get spotlight container and clear previous content
             const spotlightContainer = document.getElementById(containerId);
