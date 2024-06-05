@@ -1,51 +1,70 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const url = '../chamber/data/members.json'; 
 
-    const url = '../chamber/data/members.json'; //https://maxstylus.github.io/wdd230/chamber/data/members.json
-    const spotlightContainer1 = document.getElementById('spotlight-one');
-    const spotlightContainer2 = document.getElementById('spotlight-two');
+    fetch(url)
+    .then(response => response.json())
+    .then(spotlightData => {
 
-    async function getMemberData() {
-        const response = await fetch(url);
-        const data = await response.json();
-        displaySpotlight1(data.members);
-        displaySpotlight2(data.members);
-    }
+        function loadSpotlight(member, containerId) {
+            // Create image element
+            const img = new Image();
+            img.src = member.imageSrc;
+            img.alt = member.name;
 
-    
-    const displaySpotlight1 = (members) => {
+            // Create name element
+            const name = document.createElement('p');
+            name.textContent = member.name;
 
-        // Filter members with Gold or Silver membership
-        const filteredMembers = members.filter(member => member.membership === 'Gold' || member.membership === 'Silver');
+            // Show Membership Level
+            const membership = document.createElement('p');
+            membership.textContent = member.membership;
 
-        // Select a random member from the filtered list
-        const randomMember = filteredMembers[Math.floor(Math.random() * filteredMembers.length)];
+            // Get spotlight container and clear previous content
+            const spotlightContainer = document.getElementById(containerId);
+            spotlightContainer.innerHTML = '';
 
-        // Create the HTML content for the spotlight one
-        spotlightContainer1.innerHTML = `
-            <img src="${randomMember.imageSrc}" alt="${randomMember.name}">
-            <h2>${randomMember.name}</h2>
-            <p>Membership: ${randomMember.membership}</p>
-        `;
-    }
+            // Append elements to spotlight container
+            spotlightContainer.appendChild(img);
+            spotlightContainer.appendChild(name);
+            spotlightContainer.appendChild(membership);
 
-    
-    const displaySpotlight2 = (members) => {
+            // Ensure image is fully loaded
+            img.addEventListener('load', () => {
+                console.log(`Image ${img.src} loaded successfully`);
+            });
 
-        // Filter members with Gold or Silver membership
-        const filteredMembers = members.filter(member => member.membership === 'Gold' || member.membership === 'Silver');
+            img.addEventListener('error', () => {
+                console.error(`Failed to load image ${img.src}`);
+            });
+        }
 
-        // Select a random member from the filtered list
-        const randomMember = filteredMembers[Math.floor(Math.random() * filteredMembers.length)];
+        // Filter out only gold and silver members
+        const eligibleMembers = spotlightData.members.filter(member => 
+            member.membership === "Gold" || member.membership === "Silver"
+        );
 
-        // Create the HTML content for the spotlight one
-        spotlightContainer2.innerHTML = `
-            <img src="${randomMember.imageSrc}" alt="${randomMember.name}">
-            <h2>${randomMember.name}</h2>
-            <p>Membership: ${randomMember.membership}</p>
-        `;
-    }
-   
-    getMemberData();
-    
-    console.table(getMemberData()); // temporary testing of data retreival */
+        if (eligibleMembers.length < 2) {
+            console.error('Not enough eligible members found');
+            return;
+        }
+
+        // Select two random eligible members
+        const randomIndices = [];
+        while (randomIndices.length < 2) {
+            const randomIndex = Math.floor(Math.random() * eligibleMembers.length);
+            if (!randomIndices.includes(randomIndex)) {
+                randomIndices.push(randomIndex);
+            }
+        }
+
+        const selectedMembers = randomIndices.map(index => eligibleMembers[index]);
+
+        loadSpotlight(selectedMembers[0], 'spotlight-one'); // Load first spotlight
+        loadSpotlight(selectedMembers[1], 'spotlight-two'); // Load second spotlight
+    })
+    .catch(error => {
+        console.error('Error fetching spotlight data:', error);
+    });
 });
+
+    
