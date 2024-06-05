@@ -222,6 +222,11 @@ section.events-and-weather {
     padding-bottom: 15px;
 }
 
+div.banner-text p{
+    color:#fff;
+    padding-bottom: 15px;
+}
+
 .close-btn {
     position: absolute;
     top: 10px;
@@ -234,8 +239,6 @@ section.events-and-weather {
 .banner-side img {
     width: 100%;    
     height: auto;
-
-    align-self: center;
     overflow: hidden;
 }
 
@@ -250,14 +253,23 @@ section.events-and-weather {
     justify-items: center;
 }
 
+/* --- End Home Page Banner --- */
+
 .main-content-item {
     display: flex;
-    flex-direction: row; 
-    padding: 15px;
+    flex-direction: column; 
+    padding: 5px;
+}
+
+.home-content-item {
+    display: flex;
+    flex-direction: row;
+    font-family: verdana;
+    font-size: 20px;
 }
 
 .main-content-img {
-    width: 100px;
+    width: 150px;
     border-radius: 15px; /* 5px rounded corners */
     padding: 10px;
 }
