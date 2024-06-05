@@ -290,11 +290,15 @@ figcaption {
 /* Home Page - Company Spotlights */
 
 .spotlight-container {
-    border: 1px solid #ccc;
+
+    background-color: rgb(96,108,56,0.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
     padding: 20px;
+    margin: 20px auto;
     width: 300px;
     text-align: center;
-    margin: 20px auto;
 }
 
 .spotlight-container img {
