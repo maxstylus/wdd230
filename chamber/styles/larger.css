@@ -36,6 +36,18 @@
 
     /* Main Section: Events and Weather */
 
+    .banner-content {
+        flex-direction: row;
+    }
+
+    .close-btn {
+        color: #fff;
+    }
+
+    .banner-side {
+        max-width: 300px;
+    }
+
     section.events-and-weather {
         display: flex;
         flex-direction: row;

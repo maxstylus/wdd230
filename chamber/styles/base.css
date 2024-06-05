@@ -188,6 +188,68 @@ section.events-and-weather {
     margin: 20px;
 }
 
+.main-header-item h2,
+.spotlight-header-item h2 {
+    padding: 5px;
+}
+
+
+/* --- Home Page Banner --- */
+
+.banner {
+    display: none; /* Initially hide the banner */
+    background-color: #56823b;
+    color: #fff;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;    
+    border: solid;
+    border-color: #BC6C25;
+    border-width: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+
+    top: 0;
+    left: 0;
+    z-index: 800;    
+}
+
+.main-content-item .banner p {
+    color: #fff;
+    padding: 3px;
+    padding-bottom: 15px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #283618;
+} 
+
+.banner-side img {
+    width: 100%;    
+    height: auto;
+
+    align-self: center;
+    overflow: hidden;
+}
+
+.banner-main {
+    width: 95%;
+    align-items: center;
+}
+
+.banner-content {
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
 .main-content-item {
     display: flex;
     flex-direction: row; 
@@ -415,9 +477,9 @@ article.list section a {
 	letter-spacing: 1.1pt;
 }
 
-img {
+article.grid section img {
 	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
+	max-width: 100%; 
 }
 
 
