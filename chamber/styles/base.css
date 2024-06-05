@@ -286,6 +286,12 @@ div.banner-text p{
     padding: 0;
 }
 
+.stats figure img {
+    width: 100%;
+    max-width: 75px;
+    height: auto;
+}
+
 .stats p span#current-temp,
 figcaption {
     font-family: verdana;
@@ -294,6 +300,11 @@ figcaption {
     margin: 0;
     border: 0;
     padding: 5px;
+}
+
+.forecast-temps {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Home Page - Company Spotlights */
@@ -323,29 +334,6 @@ figcaption {
 .spotlight-container p {
     margin: 5px 0;
 }
-
-/*
-section.company-spotlight {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-}
-
-.spotlight-container {
-    background-color: rgb(96,108,56,0.5);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; 
-    padding: 20px;
-    margin: 20px;
-}
-
-.spotlight-content-item {
-    display: flex;
-    flex-direction: row;
-}
-
-*/
 
 
 /* Discover Page */
