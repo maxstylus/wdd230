@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const url = 'https://maxstylus.github.io/wdd230/chamber/data/members.json';
+    const url = '../chamber/data/members.json'; //https://maxstylus.github.io/wdd230/chamber/data/members.json
     const spotlightContainer1 = document.getElementById('spotlight-one');
     const spotlightContainer2 = document.getElementById('spotlight-two');
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         displaySpotlight2(data.members);
     }
 
-
+    
     const displaySpotlight1 = (members) => {
 
         // Filter members with Gold or Silver membership
