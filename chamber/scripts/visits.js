@@ -21,12 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const twentyFourHoursFromNow = currentTime + 24 * 60 * 60 * 1000;
         const daysFromLastVisit = calculateDaysDifference(Number(lastTime), currentTime);
 
-        console.log(`${currentTime}`);
-        console.log(`${lastTime}`);
-        console.log(`${twentyFourHoursFromNow}`);
-        console.log(`${daysFromLastVisit}`);
-
-
         if (lastTime === null) {
             visits.textContent = "";
             visits.textContent = "Welcome! Let us know if you have any questions.";
