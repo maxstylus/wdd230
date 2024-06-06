@@ -12,11 +12,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const discoverPageVisitContainer = document.getElementById('discover-pg-visits');       
 
         const visits = document.createElement('p');
+
+        // Use this to clear localStorage for testing
+        //localStorage.removeItem('currentTime');
     
         const currentTime = Date.now();
         const lastTime = getStoredTime();
         const twentyFourHoursFromNow = currentTime + 24 * 60 * 60 * 1000;
-        const daysFromLastVisit = calculateDaysDifference(Number(lastTime), currentTime);;
+        const daysFromLastVisit = calculateDaysDifference(Number(lastTime), currentTime);
+
+        console.log(`${currentTime}`);
+        console.log(`${lastTime}`);
+        console.log(`${twentyFourHoursFromNow}`);
+        console.log(`${daysFromLastVisit}`);
+
 
         if (lastTime === null) {
             visits.textContent = "";
@@ -27,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             visits.textContent = "Back so soon! Awesome!";
         } else {
             visits.textContent = "";
-            visits.textContent = `You last visited ${daysFromLastVisit.toFixed(2)} days ago.`; //parseStr(${daysFromLastVisit})
+            visits.textContent = `You last visited ${daysFromLastVisit.toFixed(2)} days ago.`; 
         }
 
         setVisitTime(currentTime);
@@ -42,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function getStoredTime() {
         // Retrieve and display the stored value
-        return new Date(parseInt(localStorage.getItem('currentTime')));        
+        return localStorage.getItem('currentTime');        
     }
 
     function calculateDaysDifference(previousTimestamp, currentTimestamp) {
