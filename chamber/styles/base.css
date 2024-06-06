@@ -390,7 +390,10 @@ section.discover-content {
     border-radius: 5px;
 }
 
+.discover-content-item img:hover {
+    transform: scale(1.1); /* Increase size by 10% */
 
+}
 
 /* -- DIRECTORY PAGE --- */
 
@@ -545,7 +548,7 @@ section.join-sidebar {
     font-family: verdana;
 }
 
-.sidebar-container p:before {
+.join-sidebar .sidebar-container p:before {
     content: ' \2043';
 }
 
