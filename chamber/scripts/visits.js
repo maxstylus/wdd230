@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             visits.textContent = "Back so soon! Awesome!";
         } else {
             visits.textContent = "";
-            visits.textContent = `You last visited ${daysDifference.toFixed(2)} days ago.`; //parseStr(${daysFromLastVisit})
+            visits.textContent = `You last visited ${daysFromLastVisit.toFixed(2)} days ago.`; //parseStr(${daysFromLastVisit})
         }
 
         setVisitTime(currentTime);
