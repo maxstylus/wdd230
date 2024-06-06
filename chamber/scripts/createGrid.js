@@ -3,14 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const listbutton = document.querySelector("#list");
     const display = document.querySelector("article");
 
-    // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
     gridbutton.addEventListener("click", () => {
+        console.log("gridbutton");
         display.classList.add("grid");
         display.classList.remove("list");
     });
 
     listbutton.addEventListener("click", () => {
+        console.log("listbutton");
+
         display.classList.add("list");
         display.classList.remove("grid");
     });
